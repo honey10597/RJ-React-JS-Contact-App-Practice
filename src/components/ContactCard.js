@@ -20,7 +20,7 @@ const ContactCard = (props) => {
           color: "red",
           marginTop: "7px",
         }}
-        onClick={() => alert("Delete Pressed!")}
+        onClick={() => props.clickHandler(props?.contact?.id)}
       />
     </div>
   );
